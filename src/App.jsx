@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Props } from "./props/props";
+// import { Props } from "./props/props";
+import { Catalog } from "./catalog/Catalog";
 const App = () => {
   const [sec, setSec] = useState(0);
 
@@ -38,26 +39,65 @@ const App = () => {
   // ];
   // );
 
-  const movies = [
+//   const movies = [
+//   {
+//     id: 1,
+//     title: "Интерстеллар",
+//     rating: 9,
+//   },
+//   {
+//     id: 2,
+//     title: "Форсаж 10",
+//     rating: 6,
+//   },
+//   {
+//     id: 3,
+//     title: "Начало",
+//     rating: 8,
+//   },
+//   {
+//     id: 4,
+//     title: "Трансформеры",
+//     rating: 7,
+//   },
+// ];
+
+const games = [
   {
     id: 1,
-    title: "Интерстеллар",
-    rating: 9,
+    title: "Minecraft",
+    genre: "Sandbox",
+    rating: 10,
   },
   {
     id: 2,
-    title: "Форсаж 10",
-    rating: 6,
-  },
-  {
-    id: 3,
-    title: "Начало",
+    title: "Counter-Strike 2",
+    genre: "Shooter",
     rating: 8,
   },
   {
+    id: 3,
+    title: "GTA V",
+    genre: "Action",
+    rating: 9,
+  },
+  {
     id: 4,
-    title: "Трансформеры",
+    title: "Dota 2",
+    genre: "MOBA",
     rating: 7,
+  },
+  {
+    id: 5,
+    title: "Roblox",
+    genre: "Sandbox",
+    rating: 6,
+  },
+  {
+    id: 6,
+    title: "The Witcher 3",
+    genre: "RPG",
+    rating: 10,
   },
 ];
   return (
@@ -78,6 +118,10 @@ const App = () => {
       {/* {movies.map((item) => {
        return <Props key={item.id} title={item.title} rating={item.rating}/>
       })} */}
+
+      {games.map((item) => {
+        return <Catalog key={item.id} title={item.title} genre={item.genre} rating={item.rating}/>
+      })}
     </>
    
   );
