@@ -151,3 +151,45 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 } */
+
+input {
+  padding: 8px;
+}
+
+.book{
+  margin-top: 60px;
+  padding: 20px;
+}
+.book p{
+  margin-top: 25px;
+}
+.book button{
+  padding: 10px;
+}
+.contr div{
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.booket{
+  padding: 20px;
+}
+
+.mybook{
+  margin-top: 15px;
+  padding: 20px
+}
+.mybooks{
+  margin-top: 50px;
+}
+.mybook .text{
+  margin-top: 15px;
+}
+
+.btn{
+  padding: 10px;
+  margin-top: 80px;
+}
+.but{
+  margin-top: 10px;
+}
